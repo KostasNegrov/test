@@ -1,4 +1,53 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Work Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-300.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-500.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-600.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-600.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-700.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.ttf") format("truetype"); }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2622,12 +2671,13 @@ template {
   padding: 0; }
 
 body {
-  font-size: 26px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
   line-height: 1.4;
   margin: 0;
   padding: 0;
-  color: yellow;
-  background-color: #000; }
+  color: #000;
+  background-color: #fff; }
 
 .container {
   max-width: 1140px;
