@@ -1,74 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Formular";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Formular/Formular.eot");
-  src: url("../fonts/Formular/Formular.eot?#iefix") format("embedded-opentype"), url("../fonts/Formular/Formular.woff") format("woff"), url("../fonts/Formular/Formular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Formular";
-  font-weight: 200;
-  font-style: normal;
-  src: url("../fonts/Formular/Formular-Light.eot");
-  src: url("../fonts/Formular/Formular-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Formular/Formular-Light.woff") format("woff"), url("../fonts/Formular/Formular-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Formular";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/Formular/Formular-Medium.eot");
-  src: url("../fonts/Formular/Formular-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Formular/Formular-Medium.woff") format("woff"), url("../fonts/Formular/Formular-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Formular";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/Formular/Formular-Bold.eot");
-  src: url("../fonts/Formular/Formular-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Formular/Formular-Bold.woff") format("woff"), url("../fonts/Formular/Formular-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Formular";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/Formular/Formular-Black.eot");
-  src: url("../fonts/Formular/Formular-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Formular/Formular-Black.woff") format("woff"), url("../fonts/Formular/Formular-Black.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Roboto/Roboto-Regular.eot");
-  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 200;
-  font-style: normal;
-  src: url("../fonts/Roboto/Roboto-Light.eot");
-  src: url("../fonts/Roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/Roboto/Roboto-Medium.eot");
-  src: url("../fonts/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/Roboto/Roboto-Bold.eot");
-  src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/Roboto/Roboto-Black.eot");
-  src: url("../fonts/Roboto/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"); }
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2692,11 +2622,12 @@ template {
   padding: 0; }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.4;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: yellow;
+  background-color: #000; }
 
 .container {
   max-width: 1140px;
