@@ -1,0 +1,47 @@
+
+
+@mixin btn-o() 
+  cursor: pointer
+  text-transform: uppercase
+  font-size: em(12px)
+  font-weight: bold
+  font-family: $auxiliary-font
+  background-color: transparent
+  border: 1px solid $color-line
+  padding: 15px 25px  
+  transition: all 200ms ease	
+  @content  /* позволЯет в последующем переопределять свойства миксина*/
+  &:hover
+    background-color: $color-hover
+    color: $white
+  &:active
+    background-color: $color-active
+
+/* как подключить миксин: @include visually-hidden() */
+
+@mixin project-link()  
+	text-transform: uppercase
+	font-family: $auxiliary-font
+	color: $color-titile
+	font-size: em(11px)
+	font-weight: bold
+	line-height: 1.2
+	position: relative
+	// margin: em(15px) 0 em(35px)  
+	&::after
+		content: ' '
+		position: absolute
+		top: 18px
+		left: 0
+		width: 0%
+		height: 2px
+		transition: all 400ms ease	
+	&:hover
+		&::after		
+			width: 100%		
+			background-color: $accent		
+  
+  
+  
+
+/* как подключить миксин: @include visually-hidden() */
