@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Solaris</title>
+	<title>Form test</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,9 +26,123 @@
 </head>
 
 <body>	
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit delectus, voluptatem maxime praesentium expedita tempore atque numquam molestias? Rerum culpa molestias, quis facilis accusantium deserunt ad excepturi debitis corrupti ut consectetur sed quae, vitae perferendis quidem voluptatibus porro aspernatur voluptates. Sequi doloremque quo vero et beatae. Tempore dignissimos necessitatibus temporibus, vero ut, aliquid quos architecto cupiditate dolore rerum obcaecati quae laudantium rem sequi. In corrupti assumenda omnis quas aliquid veritatis nam earum asperiores tempora hic rem voluptas minima, consequuntur quod nemo molestiae repudiandae ea. Quaerat, dolorem ullam! Exercitationem unde perferendis quia ipsam nostrum totam cumque maiores adipisci reiciendis, eius reprehenderit.
-  </p>
+  <div class="container">    
+    <section class="form" id="form">  
+      <h1>Registration form</h1>
+
+      <div class="form__wrap">
+
+        <div class="form__signup">
+          <p>Sign up</p>
+
+        </div><!-- form__signup -->
+
+        <div class="form__content">
+          <div class="content">
+            <div class="content__header">
+              <h2 class="content__title">New user?</h2>
+              <p class="content__paragraph">Use the form below to create your account.</p>             
+            </div><!-- content__header -->
+
+            <div class="content__wrap">
+
+              <form action="#" class="content__left">
+                <div class="content__input-box">
+                  <label class="content__label">First Name</label><br>
+                  <input class="content__line" type="text" required>
+                </div>
+                <div class="content__input-box">
+                  <label class="content__label">Nationality</label><br>
+                  <div class="content__select">
+                    <select class="content__line content__nationality" name="nationality">
+                      <option value="#">American</option>
+                      <option value="#">Russian</option>
+                      <option value="#">Ukrainian</option>
+                      <option value="#">Belorussian</option>
+                    </select>
+                  </div>
+                  
+                </div>
+                <div class="content__input-box">
+                  <label class="content__label">Date of Birth</label>
+                  <div class="content__date">
+                    <div class="content__select--date">
+                      <select class="content__options content__line--date" name="number">
+                        <option value="#">21</option>
+                        <option value="#">22</option>
+                        <option value="#">23</option>
+                        <option value="#">24</option>
+                      </select>
+                    </div>
+                    <div class="content__select--date">
+                      <select class="content__options content__line--month" name="month">
+                        <option value="#">Deсember</option>
+                        <option value="#">January</option>
+                        <option value="#">February</option>                      
+                    </select>
+                    </div>
+                    <div class="content__select--date">
+                      <select class="content__options content__line--year" name="year">
+                        <option value="#">1995</option>
+                        <option value="#">1996</option>
+                        <option value="#">1997</option>                      
+                    </select>  
+                    </div>
+                                      
+                  </div><!-- content__date -->                  
+                </div>
+                <div class="content__input-box">
+                  <label class="content__label">Password</label><br>
+                  <input class="content__line" type="text" required>
+                </div>                
+              </form><!-- content__left -->
+
+              <form action="#" class="content__right">
+
+                <div class="content__input-box">
+                  <label class="content__label">Last Name</label><br>
+                  <input class="content__line" type="text" required>
+                </div>
+                <div class="content__input-box">
+                  <label class="content__label">E-mail</label><br>
+                  <input class="content__line" type="email" required>
+                </div>
+                <div class="content__input-box">
+                  <p class="content__label">Gender</p>
+                  <div class="content__radio">
+                    <input class="content__radio--input" type="radio" id="radio_1" name="Gender">
+                    <label class="content__radio--label" for="radio_1">Male</label>                    
+                  </div>                  
+                  <div class="content__radio content__radio--two">
+                    <input class="content__radio--input" type="radio" id="radio_2" name="Gender">
+                    <label class="content__radio--label" for="radio_2">Female</label>                    
+                  </div>                  
+                </div>
+                <div class="content__input-box">
+                  <label class="content__label">Confirm Password</label><br>
+                  <input class="content__line" type="text" required>
+                </div>                
+
+              </form><!-- content__right -->
+            </div><!-- form__wrap -->
+
+            <div class="content__footer">
+              <div class="content__login">
+                <p>Have an account?</p>
+                <a href="#">Login</a>
+              </div>
+              <button class="content__btn">Complete Signup</button>
+            </div><!-- content__footer -->
+
+          </div><!-- content -->
+         
+        </div><!-- form__content -->
+      </div><!-- form__wrap -->
+     
+     
+    </section>
+  </div>
+  
 
 
 

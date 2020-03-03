@@ -1,0 +1,173 @@
+
+
+.content
+  width: 527px
+  padding: 0 22px 0 20.8px
+  &__wrap
+    display: flex
+    justify-content: space-between
+    margin-top: 17px
+  &__title
+    margin-top: 40px
+    font-size: 22px
+    font-weight: 500
+    line-height: 26px
+    letter-spacing: -0.46px
+  &__paragraph
+    margin-top: -1px
+    font-family: $default-font
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 16px
+  &__left
+    .content__input-box:nth-child(2)
+      margin-top: 13px
+    .content__input-box:nth-child(3)
+      margin-top: 15px
+    .content__input-box:nth-child(4)
+      margin-top: 19px    
+  &__right
+    .content__input-box:nth-child(2)
+      margin-top: 14px
+    .content__input-box:nth-child(3)
+      margin-top: 17px
+    .content__input-box:nth-child(4)
+      margin-top: 19px
+  &__label
+    font-family: $default-font
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    color: $color-text-label 
+  &__line
+    width: 234.5px
+    padding: 3px 0 5px 0
+    font-family: Work Sans;
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    border-top: transparent 
+    border-left: transparent 
+    border-right: transparent 
+    border-bottom: 1px solid $color-bg
+    &:focus      
+      outline: 0
+      border-color: $color-bg
+    &--date
+      margin-right: 4px
+      padding: 0px 40px 1px 0px
+    &--month
+      margin-right: 4px
+      padding: 0px 21px 1px 0px
+    &--year
+      padding: 0px 35px 1px 0px
+  &__options     
+    border-top: transparent 
+    border-left: transparent 
+    border-right: transparent 
+    border-bottom: 1px solid $color-bg
+    appearance: none
+    &:focus      
+      outline: 0
+      border-color: transparent
+  &__date    
+    padding-top: 3px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px      
+    .content__select--date:nth-child(1)::after
+      right: 4px
+    .content__select--date:nth-child(2)::after
+      right: 4px
+    .content__select--date:nth-child(3)::after
+      right: -1px
+  &__select
+    position: relative
+    &::after
+      content: url(../images/Shape.png)
+      position: absolute         
+      top: 0
+      right: 0
+      pointer-events: none
+    &--date     
+      position: relative 
+      display: inline-block
+      &::after
+        content: url(../images/Shape.png)
+        position: absolute         
+        top: -2px
+        right: 4px
+        pointer-events: none   
+  &__nationality    
+    appearance: none
+    &:focus      
+      outline: 0
+      border-color: $color-bg
+  &__radio
+    margin-top: 4px    
+    display: inline-block
+    &--two:last-child
+      margin-left: 15px
+    &--input
+      appearance: none
+      position: absolute       
+    &--label
+      cursor: pointer
+      position: relative
+      padding-left: 17px      
+      &::before
+        content: ' '
+        position: absolute
+        top: 3px
+        left: -1px
+        width: 12px
+        height: 12px
+        background-color: $white
+        border: 1px solid $accent
+        border-radius: 50%
+      &::after
+        content: ' '
+        position: absolute
+        top: 6px
+        left: 2px
+        width: 6px
+        height: 6px        
+        background-color: $accent
+        border-radius: 50%
+        opacity: 0 
+        transition: all 300ms ease 
+    
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 96px
+  &__login
+    p, a
+      display: inline-block
+      font-family: $default-font
+      font-style: normal
+      font-weight: 300
+      font-size: 13px
+      line-height: 15px
+  &__btn
+    margin-top: 2px
+    padding: 7px 25px
+    font-family: $auxiliary-font
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: $white
+    background: $accent
+    border: none
+   
+
+        
+
+.content__radio--input:checked + .content__radio--label::after
+  opacity: 1  
