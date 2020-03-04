@@ -383,7 +383,7 @@ template {
     .form__signup p {
       position: absolute;
       bottom: 101px;
-      left: -9px;
+      right: -73px;
       width: 220px;
       font-family: "PT Sans", "Tahoma", sans-serif;
       font-size: 49px;
@@ -404,18 +404,42 @@ template {
     max-width: 100%; } }
 
 @media (max-width: 575px) {
-  .form__wrap {
+  .container {
+    display: block;
+    margin: 0 auto; }
+  .form {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0; }
+    .form__wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .form__signup p {
+      position: initial;
+      width: 350px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      padding: 10px 0 10px 22px; } }
+
+@media (max-width: 560px) {
+  .content__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            flex-direction: column; }
+  .form__signup p {
+    font-size: 28px;
+    width: 280px;
+    margin: 0 auto; } }
 
 .content {
   width: 527px;
-  padding: 0 22px 0 20.8px; }
+  padding: 0 22px 0 22px; }
   .content__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -473,12 +497,15 @@ template {
       border-color: #F2F2F2; }
     .content__line--date {
       margin-right: 4px;
-      padding: 0px 40px 1px 0px; }
+      padding: 0px 40px 1px 0px;
+      background-color: #ffffff; }
     .content__line--month {
       margin-right: 4px;
-      padding: 0px 21px 1px 0px; }
+      padding: 0px 21px 1px 0px;
+      background-color: #ffffff; }
     .content__line--year {
-      padding: 0px 35px 1px 0px; }
+      padding: 0px 35px 1px 0px;
+      background-color: #ffffff; }
   .content__options {
     border-top: transparent;
     border-left: transparent;
@@ -522,7 +549,8 @@ template {
   .content__nationality {
     -webkit-appearance: none;
        -moz-appearance: none;
-            appearance: none; }
+            appearance: none;
+    background-color: #ffffff; }
     .content__nationality:focus {
       outline: 0;
       border-color: #F2F2F2; }
@@ -594,6 +622,24 @@ template {
 
 .content__radio--input:checked + .content__radio--label::after {
   opacity: 1; }
+
+@media (max-width: 575px) {
+  .content {
+    width: 100%; }
+    .content__footer {
+      margin: 45px 0; }
+    .content__btn {
+      margin-top: 18px; } }
+
+@media (max-width: 560px) {
+  .content {
+    width: 278px;
+    margin: 0 auto; }
+    .content__footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 *,
 ::before,

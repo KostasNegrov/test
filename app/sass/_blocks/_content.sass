@@ -2,7 +2,7 @@
 
 .content
   width: 527px
-  padding: 0 22px 0 20.8px
+  padding: 0 22px 0 22px
   &__wrap
     display: flex
     justify-content: space-between
@@ -59,11 +59,14 @@
     &--date
       margin-right: 4px
       padding: 0px 40px 1px 0px
+      background-color: $white
     &--month
       margin-right: 4px
       padding: 0px 21px 1px 0px
+      background-color: $white
     &--year
       padding: 0px 35px 1px 0px
+      background-color: $white
   &__options     
     border-top: transparent 
     border-left: transparent 
@@ -104,6 +107,7 @@
         pointer-events: none   
   &__nationality    
     appearance: none
+    background-color: $white
     &:focus      
       outline: 0
       border-color: $color-bg
@@ -171,3 +175,18 @@
 
 .content__radio--input:checked + .content__radio--label::after
   opacity: 1  
+
+@media (max-width: 575px)
+  .content
+    width: 100%
+    &__footer
+      margin: 45px 0
+    &__btn
+      margin-top: 18px
+
+@media (max-width: 560px)
+  .content    
+    width: 278px
+    margin: 0 auto
+    &__footer
+      flex-direction: column
