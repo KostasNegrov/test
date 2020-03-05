@@ -12,8 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="stylesheet" href="css/style.min.css">
-	
+	<link rel="stylesheet" href="css/style.min.css">	
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -93,7 +92,7 @@
                 </div>
                 <div class="content__input-box">
                   <label class="content__label">Password</label><br>
-                  <input class="content__line" type="text" required>
+                  <input class="content__line" type="password" minlength="8" required>
                 </div>                
               </form><!-- content__left -->
 
@@ -120,7 +119,7 @@
                 </div>
                 <div class="content__input-box">
                   <label class="content__label">Confirm Password</label><br>
-                  <input class="content__line" type="text" required>
+                  <input class="content__line" type="password" minlength="8" required>
                 </div>                
 
               </form><!-- content__right -->
@@ -131,7 +130,8 @@
                 <p>Have an account?</p>
                 <a href="#">Login</a>
               </div>
-              <button class="content__btn">Complete Signup</button>
+              <!-- <button class="content__btn">Complete Signup</button> -->
+              <input type="submit" name="submit" value="Complete Signup" class="content__btn"></input>
             </div><!-- content__footer -->
 
           </div><!-- content -->
@@ -143,7 +143,6 @@
     </section>
   </div>
   
-
 
 
 	<script src="libs/jquery/jquery-1.12.0.min.js"></script>	
