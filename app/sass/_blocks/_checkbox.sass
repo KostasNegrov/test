@@ -1,0 +1,75 @@
+
+  
+.content  
+  /** Анимация галочки **/
+  &__svg-wrap
+    position: relative  
+    display: flex
+    flex-direction: column-reverse
+  
+  &__svg
+    position: absolute
+    top: 25px
+    right: 0
+    width: 11px  
+    height: 8px  
+    fill: none
+    stroke: $accent
+    stroke-width: 1px
+    stroke-dasharray: 13 30       
+    stroke-linejoin: round   
+    transition: all 450ms cubic-bezier(1,0,.37,.91)
+    opacity: 0
+          
+  &__mail:valid + label > .content__svg 
+    opacity: 1
+    animation: animation-check ease-in-out 500ms forwards   
+
+
+#btn
+  margin-top: 2px
+  padding: 7px 25px
+  font-family: $auxiliary-font
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: $white
+  background: $accent
+  border: none
+  cursor: pointer
+  transition: all 300ms ease
+  &:hover
+    background: rgba($accent, 0.8)
+
+// .valid:invalid
+//   color: red
+  border-bottom: 2px solid red
+
+.registered
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0  
+  span
+    margin: auto
+  & ~ *
+    transition: all 300ms ease
+  &.active,
+    & ~ *  
+      // opacity: 0
+
+
+
+
+
+
+@keyframes animation-check
+  0% 
+    stroke-dashoffset: 13
+  
+  100% 
+    stroke-dashoffset: 0
+  

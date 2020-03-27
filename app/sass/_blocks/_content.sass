@@ -1,73 +1,99 @@
 
 
 .content
+  position: relative
   width: 527px
-  padding: 0 22px 0 22px
+  padding: 0 22px 0 21px
   &__wrap
+    position: relative
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     margin-top: 17px
+  &__item-wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .content__item:nth-child(1)
+      margin-top: 1px      
+    .content__item:nth-child(2)
+      margin-top: 15px
+    .content__item:nth-child(3)
+      margin-top: 14px
+    .content__item:nth-child(4)
+      margin-top: 15px
   &__title
-    margin-top: 40px
+    margin-top: 23px
     font-size: 22px
     font-weight: 500
     line-height: 26px
     letter-spacing: -0.46px
   &__paragraph
     margin-top: -1px
+    margin-bottom: 17px
     font-family: $default-font
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 16px
-  &__left
-    .content__input-box:nth-child(2)
-      margin-top: 13px
-    .content__input-box:nth-child(3)
-      margin-top: 15px
-    .content__input-box:nth-child(4)
-      margin-top: 19px    
-  &__right
-    .content__input-box:nth-child(2)
-      margin-top: 14px
-    .content__input-box:nth-child(3)
-      margin-top: 17px
-    .content__input-box:nth-child(4)
-      margin-top: 19px
+  &__item
+    width: 100%
+    display: flex
+    justify-content: space-between
+    // align-items: flex-start
+  &__input-box
+    width: 236px
+  // &__left
+  //   .content__input-box:nth-child(2)
+  //     margin-top: 13px
+  //   .content__input-box:nth-child(3)
+  //     margin-top: 15px
+  //   .content__input-box:nth-child(4)
+  //     margin-top: 19px    
+  // &__right
+  //   .content__input-box:nth-child(2)
+  //     margin-top: -2px
+  //   .content__input-box:nth-child(3)
+  //     margin-top: 19px
+  //   .content__input-box:nth-child(4)
+  //     margin-top: 19px
   &__label
     font-family: $default-font
     font-style: normal
     font-weight: 300
     font-size: 12px
-    line-height: 14px
+    // line-height: 14px
     color: $color-text-label 
   &__line
     width: 234.5px
-    padding: 3px 0 5px 0
+    padding: 3px 0 8px 0
     font-family: Work Sans;
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 16px
+    // line-height: 16px
     border-top: transparent 
     border-left: transparent 
     border-right: transparent 
     border-bottom: 1px solid $color-bg
+    background-color: transparent
     &:focus      
       outline: 0
       border-color: $color-bg
     &--date
       margin-right: 4px
       padding: 0px 40px 1px 0px
-      background-color: $white
+      background-color: transparent
     &--month
       margin-right: 4px
+      margin-top: 1px
       padding: 0px 21px 1px 0px
-      background-color: $white
+      background-color: transparent
     &--year
       padding: 0px 35px 1px 0px
-      background-color: $white
-  &__options     
+      background-color: transparent
+  &__options   
+    padding-bottom: 6px  
     border-top: transparent 
     border-left: transparent 
     border-right: transparent 
@@ -81,7 +107,7 @@
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 16px      
+    // line-height: 16px      
     .content__select--date:nth-child(1)::after
       right: 4px
     .content__select--date:nth-child(2)::after
@@ -106,8 +132,7 @@
         right: 4px
         pointer-events: none   
   &__nationality    
-    appearance: none
-    background-color: $white
+    appearance: none    
     &:focus      
       outline: 0
       border-color: $color-bg
@@ -122,12 +147,13 @@
     &--label
       cursor: pointer
       position: relative
-      padding-left: 17px      
+      padding-left: 18px    
+      line-height: 1.5
       &::before
         content: ' '
         position: absolute
-        top: 3px
-        left: -1px
+        top: 4px
+        left: 0
         width: 12px
         height: 12px
         background-color: $white
@@ -136,8 +162,8 @@
       &::after
         content: ' '
         position: absolute
-        top: 6px
-        left: 2px
+        top: 7px
+        left: 3px
         width: 6px
         height: 6px        
         background-color: $accent
@@ -146,11 +172,15 @@
         transition: all 300ms ease 
     
   &__footer
+    width: 100%
     display: flex
     justify-content: space-between
     align-items: center
-    margin-top: 96px
+    margin-top: 95px
   &__login
+    position: absolute
+    bottom: 10px
+    left: 20px
     p, a
       display: inline-block
       font-family: $default-font
@@ -158,23 +188,23 @@
       font-weight: 300
       font-size: 13px
       line-height: 15px
-  &__btn
-    margin-top: 2px
-    padding: 7px 25px
-    font-family: $auxiliary-font
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 18px
-    color: $white
-    background: $accent
-    border: none
-    cursor: pointer
-    transition: all 300ms ease
-    &:hover
-      background: rgba($accent, 0.8)
+  // &__btn
+  //   margin-top: 2px
+  //   padding: 7px 25px
+  //   font-family: $auxiliary-font
+  //   font-style: normal
+  //   font-weight: normal
+  //   font-size: 14px
+  //   line-height: 18px
+  //   color: $white
+  //   background: $accent
+  //   border: none
+  //   cursor: pointer
+  //   transition: all 300ms ease
+  //   &:hover
+  //     background: rgba($accent, 0.8)
   
-   
+
 
         
 
@@ -188,6 +218,9 @@
       margin: 45px 0
     &__btn
       margin-top: 18px
+    &__login      
+      bottom: 53px
+     
 
 @media (max-width: 560px)
   .content    
@@ -195,3 +228,16 @@
     margin: 0 auto
     &__footer
       flex-direction: column
+      margin-bottom: 25px
+    &__login     
+      position: static
+      width: 150px
+      margin: 0 auto
+      margin-bottom: 45px
+    &__item
+      flex-direction: column
+    &__item-wrap
+      .content__input-box:nth-child(4)
+        margin-top: 75px
+
+  

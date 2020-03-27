@@ -3,151 +3,216 @@
 
 <head>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>Form test</title>
-	<meta name="description" content="">
+  <title>Form test</title>
+  
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="stylesheet" href="css/style.min.css">	
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/animate/animate.css">
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+  
 </head>
 
-<body>	
-  <div class="container">    
-    <section class="form" id="form">  
+<body>
+  
+  <div class="container">
+    
+    <section class="form" id="form">
       <h1>Registration form</h1>
 
       <div class="form__wrap">
 
-        <div class="form__signup">
+        <div class="form__signup wow bounceInUp">
           <p>Sign up</p>
+        </div>
+        <!-- form__signup -->
 
-        </div><!-- form__signup -->
+        <div class="form__content wow bounceInDown" >
 
-        <div class="form__content">
+          <div class="big-icon">                 
+            <object id="user" class="big-icon__svg" type="image/svg+xml" data="images/user.svg"></object>            
+          </div>
+          
           <div class="content">
-            <div class="content__header">
-              <h2 class="content__title">New user?</h2>
-              <p class="content__paragraph">Use the form below to create your account.</p>             
-            </div><!-- content__header -->
 
-            <div class="content__wrap">
+            <form id="form" class="content__wrap">
 
-              <form action="#" class="content__left">
-                <div class="content__input-box">
-                  <label class="content__label">First Name</label><br>
-                  <input class="content__line" type="text" required>
+              <div class="registered active"><span>Спасибо за регистрацию</span></div>
+
+              <div class="content__header wow fadeInDown" data-wow-delay="0.8s">
+                <h2 class="content__title">New user?</h2>
+                <p class="content__paragraph">Use the form below to create your account.</p>
+              </div>
+              <!-- content__header -->
+
+              <div class="content__item-wrap">
+
+                <div class="content__item">
+
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="0.3s">
+                    <label class="content__label">First Name</label><br>
+                    <input id="username" class="content__line valid" type="text" pattern="[A-Za-z]{2,}"
+                      title="Не менее двух латинских букв" required>
+                  </div><!-- content__input-box -->
+
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="0.5s">
+                    <label class="content__label">Last Name</label><br>
+                    <input class="content__line" type="text" title="Любая буква русского и латинского алфавита">
+                  </div><!-- content__input-box -->
+
                 </div>
-                <div class="content__input-box">
-                  <label class="content__label">Nationality</label><br>
-                  <div class="content__select">
-                    <select class="content__line content__nationality" name="nationality">
-                      <option value="#">American</option>
-                      <option value="#">Russian</option>
-                      <option value="#">Ukrainian</option>
-                      <option value="#">Belorussian</option>
-                    </select>
-                  </div>
-                  
-                </div>
-                <div class="content__input-box">
-                  <label class="content__label">Date of Birth</label>
-                  <div class="content__date">
-                    <div class="content__select--date">
-                      <select class="content__options content__line--date" name="number">
-                        <option value="#">21</option>
-                        <option value="#">22</option>
-                        <option value="#">23</option>
-                        <option value="#">24</option>
+                <div class="content__item">
+
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="0.7s">
+                    <label class="content__label">Nationality</label><br>
+                    <div class="content__select">
+                      <select class="content__line content__nationality" name="nationality">
+                        <option value="#"></option>
+                        <option value="#">American</option>
+                        <option value="#">Russian</option>
+                        <option value="#">Ukrainian</option>
+                        <option value="#">Belorussian</option>
                       </select>
                     </div>
-                    <div class="content__select--date">
-                      <select class="content__options content__line--month" name="month">
-                        <option value="#">Deсember</option>
-                        <option value="#">January</option>
-                        <option value="#">February</option>                      
-                    </select>
+                  </div><!-- content__input-box -->
+
+                  <div class="content__input-box content__svg-wrap wow fadeInUp" data-wow-delay="0.9s">
+                    <input id="input-mail" class="content__line content__mail" type="email" required>
+                    <label for="input-mail" class="content__label">
+                      <svg class="content__svg">
+                        <use xlink:href="images/symbol/sprite.svg#verification-mark"></use>
+                      </svg>
+                      E-mail
+                    </label>
+                  </div><!-- content__input-box -->
+
+                </div>
+                <div class="content__item">
+
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="1.1s">
+                    <label class="content__label">Date of Birth</label>
+                    <div class="content__date">
+                      <div class="content__select--date">
+                        <select class="content__options content__line--date" name="number">
+                          <option value="#"></option>
+                          <option value="#">21</option>
+                          <option value="#">22</option>
+                          <option value="#">23</option>
+                          <option value="#">24</option>
+                        </select>
+                      </div>
+                      <div class="content__select--date">
+                        <select class="content__options content__line--month" name="month">
+                          <option value="#"></option>
+                          <option value="#">Deсember</option>
+                          <option value="#">January</option>
+                          <option value="#">February</option>
+                        </select>
+                      </div>
+                      <div class="content__select--date">
+                        <select class="content__options content__line--year" name="year">
+                          <option value="#"></option>
+                          <option value="#">1995</option>
+                          <option value="#">1996</option>
+                          <option value="#">1997</option>
+                        </select>
+                      </div>
+                    </div><!-- content__date -->
+                  </div><!-- content__input-box -->
+
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="1.3s">
+                    <p class="content__label">Gender</p>
+                    <div class="content__radio">
+                      <input class="content__radio--input" type="radio" id="radio_1" name="Gender">
+                      <label class="content__radio--label" for="radio_1">Male</label>
                     </div>
-                    <div class="content__select--date">
-                      <select class="content__options content__line--year" name="year">
-                        <option value="#">1995</option>
-                        <option value="#">1996</option>
-                        <option value="#">1997</option>                      
-                    </select>  
+                    <div class="content__radio content__radio--two">
+                      <input class="content__radio--input" type="radio" id="radio_2" name="Gender">
+                      <label class="content__radio--label" for="radio_2">Female</label>
                     </div>
-                                      
-                  </div><!-- content__date -->                  
+                  </div><!-- content__input-box -->
+
                 </div>
-                <div class="content__input-box">
-                  <label class="content__label">Password</label><br>
-                  <input class="content__line" type="password" minlength="8" required>
-                </div>                
-              </form><!-- content__left -->
+                <div class="content__item">
 
-              <form action="#" class="content__right">
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="1.5s">
+                    <label class="content__label">Password</label><br>
+                    <input class="content__line" name="pasform" type="password"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                      title="Пароль пользователя должен содержать от 8 символов, заглавные и строчные буквы, а также цифры."
+                      required>
+                  </div><!-- content__input-box -->
 
-                <div class="content__input-box">
-                  <label class="content__label">Last Name</label><br>
-                  <input class="content__line" type="text" required>
+                  <div class="content__input-box wow fadeInUp" data-wow-delay="1.7s">
+                    <label class="content__label">Confirm Password</label><br>
+                    <input class="content__line" name="pasform" type="password"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                      title="Пароль пользователя должен содержать от 8 символов, заглавные и строчные буквы, а также цифры."
+                      required>
+                  </div><!-- content__input-box -->
+
                 </div>
-                <div class="content__input-box">
-                  <label class="content__label">E-mail</label><br>
-                  <input class="content__line" type="email" required>
-                </div>
-                <div class="content__input-box">
-                  <p class="content__label">Gender</p>
-                  <div class="content__radio">
-                    <input class="content__radio--input" type="radio" id="radio_1" name="Gender">
-                    <label class="content__radio--label" for="radio_1">Male</label>                    
-                  </div>                  
-                  <div class="content__radio content__radio--two">
-                    <input class="content__radio--input" type="radio" id="radio_2" name="Gender">
-                    <label class="content__radio--label" for="radio_2">Female</label>                    
-                  </div>                  
-                </div>
-                <div class="content__input-box">
-                  <label class="content__label">Confirm Password</label><br>
-                  <input class="content__line" type="password" minlength="8" required>
-                </div>                
+              </div><!-- content__item-wrap -->
 
-              </form><!-- content__right -->
-            </div><!-- form__wrap -->
 
-            <div class="content__footer">
-              <div class="content__login">
-                <p>Have an account?</p>
-                <a href="#">Login</a>
-              </div>
-              <!-- <button class="content__btn">Complete Signup</button> -->
-              <input type="submit" name="submit" value="Complete Signup" class="content__btn"></input>
-            </div><!-- content__footer -->
 
-          </div><!-- content -->
-         
-        </div><!-- form__content -->
-      </div><!-- form__wrap -->
-     
-     
+
+
+              <div class="content__footer">
+
+                <div></div>
+                <input id="btn" class="content__btn wow bounceInRight" data-wow-delay="2s" type="submit" name="submit" value="Complete Signup"></input>
+
+              </div><!-- content__footer -->
+
+            </form>
+            <div class="content__login wow bounceInLeft" data-wow-delay="2s">
+              <p>Have an account?</p>
+              <a href="#">Login</a>
+            </div>
+
+
+
+
+
+          </div>
+          <!-- content -->
+
+        </div>
+        <!-- form__content -->
+      </div>
+      <!-- form__wrap -->
+
+
     </section>
   </div>
+
+
   
+  <!-- <script src="libs/jquery/jquery-1.12.0.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-2.1.1.js"
+  integrity="sha256-FA/0OOqu3gRvHOuidXnRbcmAWVcJORhz+pv3TX2+U6w="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>  
+  <script defer src="libs/wow/wow.min.js"></script>
+  <script defer src="js/all.min.js"></script>
+
+  	
 
 
-	<script src="libs/jquery/jquery-1.12.0.min.js"></script>	
-  <script defer src="js/all.min.js"></script>	
-		
-	
 </body>
+
 </html>

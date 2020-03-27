@@ -4,7 +4,8 @@ module.exports = function () {        /* этот таск копирует вс
         'app/libs/**/*',    /* библиотеки */
         'app/fonts/**/*.{eot,ttf,woff,woff2}',    /* шрифты */
         'app/images/**',                  /* изображения */
-        'app/*.html'                      /* html */
+        'app/*.html',                      /* html */
+        'app/*.php'                      /* html */
     ], {
       base: 'app'                       /* указываем откуда это все берется */
     })
